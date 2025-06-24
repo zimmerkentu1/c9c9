@@ -62,8 +62,8 @@ else
   exit 1
 fi
 
-USERNAME="kontol"
-PASSWORD="kontol"
+USERNAME="lol"
+PASSWORD="lol"
 
 print_message "$YELLOW" "🚀 Step 4: Running Cloud9 Server..."
 sudo docker run -d \

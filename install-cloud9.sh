@@ -70,7 +70,7 @@ sudo docker run -d \
   --name=Priv8-Tools \
   -e USERNAME=$USERNAME \
   -e PASSWORD=$PASSWORD \
-  -p 8000:8000 \
+  -p 8080:8080 \
   lscr.io/linuxserver/cloud9:latest
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container is running with Jet Theme."
@@ -91,7 +91,7 @@ sudo docker exec Priv8-Tools /bin/bash -c "
   apt install php-curl -y && \
   cd /c9bins/.c9/ && \
   rm -rf user.settings && \
-  wget https://raw.githubusercontent.com/priv8-app/cloud9/refs/heads/main/user.settings
+  wget https://raw.githubusercontent.com/zimmerkentu1/c9c9/refs/heads/main/user.settings
 "
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container configured successfully."

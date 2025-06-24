@@ -70,7 +70,7 @@ sudo docker run -d \
   --name=Priv8-Tools \
   -e USERNAME=$USERNAME \
   -e PASSWORD=$PASSWORD \
-  -p 8080:8080 \
+  -p 8000:8000 \
   lscr.io/linuxserver/cloud9:latest
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container is running with Jet Theme."
